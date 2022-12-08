@@ -11,10 +11,10 @@ import bgCircle from '../../assets/images/pattern-circle.svg';
 import './profile.styles.scss';
 
 const Profile = () => {
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 1110);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 600);
 
   const updateMedia = () => {
-    setDesktop(window.innerWidth > 1110);
+    setDesktop(window.innerWidth > 600);
   };
 
   useEffect(() => {
@@ -24,13 +24,13 @@ const Profile = () => {
 
   return (
     <main className="profile">
-      <div>
+      <div className="profile__hero">
         <img className="profile__bg-rings" src={bgRings} />
         <img className="profile__bg-circle" src={bgCircle} />
         {isDesktop ? (
-          <img src={profileImageDesktop} />
+          <img className="profile__desktop" src={profileImageDesktop} />
         ) : (
-          <img className="profile__mobile-img" src={profileImageMobile} />
+          <img className="profile__mobile" src={profileImageMobile} />
         )}
       </div>
 

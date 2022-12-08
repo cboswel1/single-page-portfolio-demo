@@ -23,7 +23,7 @@
     height: 129px;
   }
 
-  &__mobile-img {
+  &__mobile {
     max-width: 174px;
     margin: auto;
     display: block;
@@ -52,5 +52,36 @@
   &__button {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .profile {
+    display: flex;
+    max-width: 1110px;
+    margin: auto;
+
+    &__hero {
+      order: 2;
+    }
+
+    &__desktop {
+      min-width: 322px;
+      width: 445px;
+      height: auto;
+    }
+
+    &__statement {
+      order: 1;
+      text-align: left;
+    }
+
+    &__bg-circle {
+      display: none;
+    }
+    &__button {
+      display: flex;
+      justify-content: start;
+    }
   }
 }
