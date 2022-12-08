@@ -1,22 +1,4 @@
-:root {
-  --color-primary-green: #4ee1a0;
-  --color-neutral-dark-1: #151515;
-  --color-neutral-dark-2: #242424;
-  --color-neutral-light-1: #d9d9d9;
-  --color-neutral-white: #fff;
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Space Grotesk';
-  src: url('/fonts/static/SpaceGrotesk-Medium.ttf');
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Space Grotesk Bold';
-  src: url('/fonts/static/SpaceGrotesk-Bold.ttf');
-}
+//reset
 
 /*
     1. Use a more-intuitive box-sizing model.

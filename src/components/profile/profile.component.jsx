@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 
+import Button from '../button/button.component';
+
 import profileImageMobile from '../../assets/images/image-profile-mobile.webp';
 import profileImageTablet from '../../assets/images/image-profile-tablet.webp';
 import profileImageDesktop from '../../assets/images/image-profile-desktop.webp';
@@ -33,12 +35,19 @@ const Profile = () => {
       </div>
 
       <div className="profile__statement">
-        <h1>Nice to meet you! I'm Adam Keyes.</h1>
-        <p>
-          Based in the UK, I’m a front-end developer passionate about building
-          accessible web apps that users love.
-        </p>
-        <button>Contact Me</button>
+        <div className="profile__statement--title">
+          <h1>
+            Nice to meet you! I'm{' '}
+            <span className="profile__statement--underline">Adam Keyes.</span>
+          </h1>
+          <p>
+            Based in the UK, I’m a front-end developer passionate about building
+            accessible web apps that users love.
+          </p>
+        </div>
+        <div className="profile__button">
+          <Button type="button">Contact Me</Button>
+        </div>
       </div>
     </main>
   );

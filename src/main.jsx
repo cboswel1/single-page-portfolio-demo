@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from '../src/routes/home.component'
+import Home from './routes/home/home.component'
 import './index.scss';
 import './globals.scss';
 

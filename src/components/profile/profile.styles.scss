@@ -33,8 +33,24 @@
   &__statement {
     text-align: center;
     display: grid;
-    display: grid;
     gap: 1.5rem;
     padding: 0 1rem;
+
+    &--title {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    &--underline {
+      padding-bottom: value;
+      border-bottom-style: solid;
+      border-bottom-width: 4px;
+      border-bottom-color: var(--color-primary-green);
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
   }
 }
