@@ -1,0 +1,46 @@
+:root {
+  --color-primary-green: #4ee1a0;
+  --color-neutral-dark-1: #151515;
+  --color-neutral-dark-2: #242424;
+  --color-neutral-light-1: #d9d9d9;
+  --color-neutral-white: #fff;
+}
+
+//Fonts
+
+@font-face {
+  font-display: swap;
+  font-family: 'Space Grotesk';
+  src: url('/fonts/static/SpaceGrotesk-Medium.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Space Grotesk Bold';
+  src: url('/fonts/static/SpaceGrotesk-Bold.ttf');
+}
+
+//Text
+
+%heading {
+  font-family: 'Space Grotesk Bold';
+  font-weight: 800;
+}
+
+h1,
+h2,
+h3 {
+  @extend %heading;
+}
+
+h1 {
+  @extend %heading;
+  font-size: 2.5rem;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+p {
+  font-family: 'Space Grotesk';
+  font-weight: 400;
+}

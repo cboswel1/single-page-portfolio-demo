@@ -1,3 +1,40 @@
-.intro-title {
-  font-size: 88px;
+@use '../../globals.scss' as *;
+
+.profile {
+  position: relative;
+
+  &__bg-rings {
+    position: absolute;
+    top: 129px;
+    left: -353px;
+    z-index: -1;
+    max-width: 530px;
+    height: 129px;
+    mix-blend-mode: normal;
+  }
+
+  &__bg-circle {
+    box-sizing: border-box;
+    position: absolute;
+    top: 252px;
+    right: -79px;
+    z-index: -1;
+    max-width: 129px;
+    height: 129px;
+  }
+
+  &__mobile-img {
+    max-width: 174px;
+    margin: auto;
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  &__statement {
+    text-align: center;
+    display: grid;
+    display: grid;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
 }
