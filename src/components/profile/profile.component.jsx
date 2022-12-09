@@ -11,27 +11,30 @@ import bgCircle from '../../assets/images/pattern-circle.svg';
 import './profile.styles.scss';
 
 const Profile = () => {
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 600);
+    const [isDesktop, setDesktop] = useState(window.innerWidth > 600);
 
-  const updateMedia = () => {
-    setDesktop(window.innerWidth > 600);
-  };
+    const updateMedia = () => {
+      setDesktop(window.innerWidth > 600);
+    };
 
-  useEffect(() => {
-    window.addEventListener('resize', updateMedia);
-    return () => window.removeEventListener('resize', updateMedia);
-  });
+    useEffect(() => {
+      window.addEventListener('resize', updateMedia);
+      return () => window.removeEventListener('resize', updateMedia);
+    });
 
   return (
     <main className="profile">
       <div className="profile__hero">
         <img className="profile__bg-rings" src={bgRings} />
         <img className="profile__bg-circle" src={bgCircle} />
+     
+        <div className="profile__image--container">
         {isDesktop ? (
-          <img className="profile__desktop" src={profileImageDesktop} />
+          <img  src={profileImageDesktop} />
         ) : (
           <img className="profile__mobile" src={profileImageMobile} />
         )}
+        </div>
       </div>
 
       <div className="profile__statement">
@@ -40,7 +43,7 @@ const Profile = () => {
             Nice to meet you! I'm{' '}
             <span className="profile__statement--underline">Adam Keyes.</span>
           </h1>
-          <p>
+          <p className="profile__statement--copy">
             Based in the UK, I’m a front-end developer passionate about building
             accessible web apps that users love.
           </p>

@@ -23,13 +23,12 @@
     height: 129px;
   }
 
-  &__mobile {
-    max-width: 174px;
+  &__image--container {
+    width: 174px;
     margin: auto;
     display: block;
     margin-bottom: 40px;
   }
-
   &__statement {
     text-align: center;
     display: grid;
@@ -58,6 +57,7 @@
 @media (min-width: 600px) {
   .profile {
     display: flex;
+    justify-content: center;
     max-width: 1110px;
     margin: auto;
 
@@ -65,23 +65,83 @@
       order: 2;
     }
 
-    &__desktop {
+    &__bg-rings {
+      top: 37px;
+      left: -300px;
+    }
+
+    &__bg-circle {
+      top: 392px;
+      right: -60px;
+      z-index: 1;
+    }
+
+    &__image--container {
       min-width: 322px;
-      width: 445px;
+      height: 100%;
+      margin: 0;
+    }
+
+    &__mobile {
+      width: 100%;
       height: auto;
     }
 
     &__statement {
       order: 1;
+      position: relative;
+      top: 100px;
+      left: 25px;
       text-align: left;
+      width: 445px;
+      height: 449px;
+      padding: 0;
+
+      &--copy {
+        width: 440px;
+      }
     }
 
-    &__bg-circle {
-      display: none;
-    }
     &__button {
       display: flex;
       justify-content: start;
+    }
+  }
+}
+
+@media (min-width: $bp-desktop) {
+  .profile {
+    &__statement {
+      top: 214px;
+      left: 64px;
+
+      width: 706px;
+      height: 303px;
+      gap: 5rem;
+
+      &--title {
+        gap: 3rem;
+      }
+
+      &--copy {
+        width: 445px;
+      }
+    }
+
+    &__image--container {
+      width: 445px;
+      height: 720px;
+    }
+
+    &__bg-rings {
+      top: 137px;
+      left: -220px;
+    }
+
+    &__bg-circle {
+      top: 552px;
+      right: 379px;
+      z-index: 1;
     }
   }
 }
