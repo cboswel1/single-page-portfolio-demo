@@ -2,6 +2,7 @@
 
 .profile {
   position: relative;
+  margin-bottom: 80px;
 
   &__bg-rings {
     position: absolute;
@@ -60,6 +61,7 @@
     justify-content: center;
     max-width: 1110px;
     margin: auto;
+    margin-bottom: 60px;
 
     &__hero {
       order: 2;
@@ -111,10 +113,10 @@
 
 @media (min-width: $bp-desktop) {
   .profile {
+    margin-bottom: 104px;
     &__statement {
       top: 214px;
-      left: 64px;
-
+      left: 0px;
       width: 706px;
       height: 303px;
       gap: 5rem;

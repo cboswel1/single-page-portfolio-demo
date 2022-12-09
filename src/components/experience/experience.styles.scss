@@ -1,3 +1,43 @@
-.language {
-  font-size: 24px;
+@use '../../globals.scss' as *;
+
+.experience {
+  border-top: solid 1px #fff;
+  display: flex;
+  justify-content: center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 600px) {
+  .experience {
+    display: flex;
+    justify-content: center;
+    border-top: solid 1px #fff;
+    max-width: 1110px;
+    margin: auto;
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__content {
+      flex: 0 0 32%;
+      height: 50px;
+      margin-top: 72px;
+    }
+
+    &__title {
+      margin-bottom: 14px;
+    }
+  }
 }
