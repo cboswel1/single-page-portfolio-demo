@@ -13,12 +13,13 @@ const Experience = () => {
 
   return (
     <div className="experience">
+    
       <div className="experience__wrapper">
         {experience.map((experience) => {
           return (
             <div className="experience__content" key={experience.id}>
               <h2 className="experience__title">{experience.name}</h2>
-              <h3>{experience.time}</h3>
+              <p>{experience.time}</p>
             </div>
           );
         })}

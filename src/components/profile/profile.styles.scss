@@ -2,7 +2,7 @@
 
 .profile {
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 
   &__bg-rings {
     position: absolute;
@@ -52,6 +52,7 @@
   &__button {
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
   }
 }
 

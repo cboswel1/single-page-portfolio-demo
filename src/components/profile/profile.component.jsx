@@ -52,6 +52,7 @@ const Profile = () => {
           <Button type="button">Contact Me</Button>
         </div>
       </div>
+
     </main>
   );
 };
