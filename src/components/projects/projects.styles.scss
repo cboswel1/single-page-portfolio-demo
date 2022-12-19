@@ -1,3 +1,13 @@
 .projects {
   font-size: 88px;
+
+  &__image--desktop {
+    max-width: 540px;
+    height: auto;
+  }
+
+  &__image--mobile {
+    max-width: 342px;
+    height: auto;
+  }
 }

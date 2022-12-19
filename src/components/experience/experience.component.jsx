@@ -1,6 +1,8 @@
 import React from 'react';
 import './experience.styles.scss';
 
+import bgRings from '../../assets/images/pattern-rings.svg';
+
 const Experience = () => {
   const experience = [
     { id: 1, name: 'HTML', time: '4 Years of Experience' },
@@ -15,6 +17,7 @@ const Experience = () => {
     <div className="experience">
     
       <div className="experience__wrapper">
+      <img className="experience__bg-rings" src={bgRings} />
         {experience.map((experience) => {
           return (
             <div className="experience__content" key={experience.id}>

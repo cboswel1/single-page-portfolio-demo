@@ -60,7 +60,7 @@
   .profile {
     display: flex;
     justify-content: center;
-    max-width: 1110px;
+    max-width: 708px;
     margin: auto;
     margin-bottom: 60px;
 
@@ -115,6 +115,8 @@
 @media (min-width: $bp-desktop) {
   .profile {
     margin-bottom: 104px;
+    max-width: 1110px;
+
     &__statement {
       top: 214px;
       left: 0px;

@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import Button from '../button/button.component';
 
 import profileImageMobile from '../../assets/images/image-profile-mobile.webp';
-import profileImageTablet from '../../assets/images/image-profile-tablet.webp';
 import profileImageDesktop from '../../assets/images/image-profile-desktop.webp';
 import bgRings from '../../assets/images/pattern-rings.svg';
 import bgCircle from '../../assets/images/pattern-circle.svg';
