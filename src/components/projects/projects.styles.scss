@@ -1,3 +1,5 @@
+@use '../../globals.scss' as *;
+
 .projects {
   font-size: 88px;
   margin: 0px 16px;
@@ -56,5 +58,35 @@
   &__projects--links {
     display: flex;
     gap: 30px;
+  }
+}
+
+@media (min-width: $bp-tablet) {
+  .projects {
+    display: flex;
+    max-width: 708px;
+    flex-wrap: wrap;
+    margin: auto;
+
+    &__header--container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__content {
+      flex: 0 0 50%;
+
+      align-items: center;
+    }
+
+    &__image--mobile {
+      max-width: 342px;
+    }
   }
 }

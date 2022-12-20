@@ -20,10 +20,10 @@ import MemoryGameMobile from '../../assets/images/thumbnail-project-5-small.webp
 import ArtGalleryMobile from '../../assets/images/thumbnail-project-6-small.webp';
 
 const Projects = () => {
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 600);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 1000);
 
   const updateMedia = () => {
-    setDesktop(window.innerWidth > 600);
+    setDesktop(window.innerWidth > 1000);
   };
 
   useEffect(() => {
@@ -92,6 +92,7 @@ const Projects = () => {
         <h2>Projects</h2>
         <Button type="button">Contact Me</Button>
       </div>
+      <div className='projects__container'>
       {projects.map((projects) => {
         return (
           <div className="projects__content" key={projects.id}>
@@ -116,16 +117,16 @@ const Projects = () => {
                   <p>{projects.techTwo}</p>
                   <p>{projects.techThree}</p>
                 </div>
-                
               </div>
               <div className="projects__projects--links">
-                  <Button type="button">View Project</Button>
-                  <Button type="button">View Code</Button>
-                </div>
+                <Button type="button">View Project</Button>
+                <Button type="button">View Code</Button>
+              </div>
             </div>
           </div>
         );
       })}
+      </div>
     </div>
   );
 };
