@@ -21,7 +21,7 @@ const Experience = () => {
         {experience.map((experience) => {
           return (
             <div className="experience__content" key={experience.id}>
-              <h2 className="experience__title">{experience.name}</h2>
+              <h3 className="experience__title">{experience.name}</h3>
               <p>{experience.time}</p>
             </div>
           );

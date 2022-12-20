@@ -1,5 +1,28 @@
 .projects {
   font-size: 88px;
+  margin: 0px 16px;
+
+  &__header--container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  &____wrapper {
+    display: flex;
+  }
+
+  &__image--wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
 
   &__image--desktop {
     max-width: 540px;
@@ -7,7 +30,31 @@
   }
 
   &__image--mobile {
-    max-width: 342px;
+    max-width: 100%;
     height: auto;
+    align-items: center;
+  }
+
+  &__info--wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    justify-content: start;
+    margin-bottom: 10px;
+  }
+
+  &__tech {
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+  }
+
+  &__projects--links {
+    display: flex;
+    gap: 30px;
   }
 }
