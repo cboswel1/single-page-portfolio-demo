@@ -20,10 +20,10 @@ import MemoryGameMobile from '../../assets/images/thumbnail-project-5-small.webp
 import ArtGalleryMobile from '../../assets/images/thumbnail-project-6-small.webp';
 
 const Projects = () => {
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 1000);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 1024);
 
   const updateMedia = () => {
-    setDesktop(window.innerWidth > 1000);
+    setDesktop(window.innerWidth > 1024);
   };
 
   useEffect(() => {
@@ -92,40 +92,40 @@ const Projects = () => {
         <h2>Projects</h2>
         <Button type="button">Contact Me</Button>
       </div>
-      <div className='projects__container'>
-      {projects.map((projects) => {
-        return (
-          <div className="projects__content" key={projects.id}>
-            <div className="projects__wrapper">
-              <div className="projects__image--wrapper">
-                {isDesktop ? (
-                  <img
-                    className="projects__image--desktop"
-                    src={projects.DesktopImage}
-                  />
-                ) : (
-                  <img
-                    className="projects__image--mobile"
-                    src={projects.MobileImage}
-                  />
-                )}
-              </div>
-              <div className="projects__info--wrapper">
-                <h3 className="projects__title">{projects.name}</h3>
-                <div className="projects__tech">
-                  <p>{projects.techOne}</p>
-                  <p>{projects.techTwo}</p>
-                  <p>{projects.techThree}</p>
+      <div className="projects__container">
+        {projects.map((projects) => {
+          return (
+            <div className="projects__content" key={projects.id}>
+              <div className="projects__wrapper">
+                <div className="projects__image--wrapper">
+                  {isDesktop ? (
+                    <img
+                      className="projects__image--desktop"
+                      src={projects.DesktopImage}
+                    />
+                  ) : (
+                    <img
+                      className="projects__image--mobile"
+                      src={projects.MobileImage}
+                    />
+                  )}
+                </div>
+                <div className="projects__info--wrapper">
+                  <h3 className="projects__title">{projects.name}</h3>
+                  <div className="projects__tech">
+                    <p>{projects.techOne}</p>
+                    <p>{projects.techTwo}</p>
+                    <p>{projects.techThree}</p>
+                  </div>
+                </div>
+                <div className="projects__projects--links">
+                  <Button type="button">View Project</Button>
+                  <Button type="button">View Code</Button>
                 </div>
               </div>
-              <div className="projects__projects--links">
-                <Button type="button">View Project</Button>
-                <Button type="button">View Code</Button>
-              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
       </div>
     </div>
   );

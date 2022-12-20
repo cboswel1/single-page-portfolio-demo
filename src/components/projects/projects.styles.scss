@@ -90,3 +90,33 @@
     }
   }
 }
+
+@media (min-width: $bp-desktop) {
+  .projects {
+    display: flex;
+    max-width: 1110px;
+    flex-wrap: wrap;
+    margin: auto;
+
+    &__header--container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__content {
+      flex: 0 0 50%;
+
+      align-items: center;
+    }
+
+    &__image--mobile {
+      max-width: 342px;
+    }
+  }
+}
