@@ -109,6 +109,7 @@ const Projects = () => {
                       src={projects.MobileImage}
                     />
                   )}
+                
                 </div>
                 <div className="projects__info--wrapper">
                   <h3 className="projects__title">{projects.name}</h3>

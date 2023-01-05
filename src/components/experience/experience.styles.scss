@@ -10,8 +10,8 @@
 
   &__bg-rings {
     position: absolute;
-    top: 1020px;
-    right: 15%;
+    bottom: -84px;
+    right: -454px;
     z-index: -1;
     max-width: 530px;
     height: 129px;
@@ -20,6 +20,7 @@
 
   &__wrapper {
     margin: 40px 0 20px;
+    position: relative;
   }
 
   &__content {
@@ -41,6 +42,10 @@
     border-bottom: none;
     max-width: 708px;
     margin: auto;
+
+    &__bg-rings {
+      right: -399px;
+    }
 
     &__wrapper {
       display: flex;
