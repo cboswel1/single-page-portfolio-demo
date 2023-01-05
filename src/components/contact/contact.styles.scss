@@ -11,6 +11,7 @@
 
   &__header {
     text-align: center;
+    width: 100%;
 
     &--title {
       margin: 60px 0 20px;
@@ -20,6 +21,7 @@
   &__form {
     position: relative;
     margin: 45px 0;
+    width: 100%;
 
     input {
       color: var(--color-neutral-white);
@@ -71,11 +73,21 @@
 
 @media (min-width: $bp-desktop) {
   .contact {
-    display: flex;
-    flex-direction: row;
-
     &__wrapper {
-      max-width: 1110px;
+      min-width: 1110px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__header {
+      text-align: left;
+      width: 50%;
+      padding-right: 150px;
+    }
+
+    &__form {
+      width: 50%;
+      padding-left: 150px;
     }
   }
 }

@@ -15,9 +15,8 @@ const Experience = () => {
 
   return (
     <div className="experience">
-    
       <div className="experience__wrapper">
-      <img className="experience__bg-rings" src={bgRings} />
+        <img className="experience__bg-rings" src={bgRings} />
         {experience.map((experience) => {
           return (
             <div className="experience__content" key={experience.id}>
