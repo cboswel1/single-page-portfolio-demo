@@ -86,6 +86,10 @@ const Projects = () => {
     },
   ];
 
+  const renderDesktop = () => {};
+
+  const renderMobile = () => {};
+
   return (
     <div className="projects">
       <div className="projects__header--container">
@@ -99,17 +103,22 @@ const Projects = () => {
               <div className="projects__wrapper">
                 <div className="projects__image--wrapper">
                   {isDesktop ? (
-                    <img
-                      className="projects__image--desktop"
-                      src={projects.DesktopImage}
-                    />
+                    <div className="projects__img--container">
+                      <img
+                        className="projects__image--desktop"
+                        src={projects.DesktopImage}
+                      />
+                      <div className="projects__projects--links-desktop">
+                        <Button type="button">View Project</Button>
+                        <Button type="button">View Code</Button>
+                      </div>
+                    </div>
                   ) : (
                     <img
                       className="projects__image--mobile"
                       src={projects.MobileImage}
                     />
                   )}
-                
                 </div>
                 <div className="projects__info--wrapper">
                   <h3 className="projects__title">{projects.name}</h3>
@@ -119,10 +128,15 @@ const Projects = () => {
                     <p>{projects.techThree}</p>
                   </div>
                 </div>
-                <div className="projects__projects--links">
-                  <Button type="button">View Project</Button>
-                  <Button type="button">View Code</Button>
-                </div>
+                {isDesktop ? (
+                  <div>
+                  </div>
+                ) : (
+                  <div className="projects__projects--links-mobile">
+                    <Button type="button">View Project</Button>
+                    <Button type="button">View Code</Button>
+                  </div>
+                )}
               </div>
             </div>
           );

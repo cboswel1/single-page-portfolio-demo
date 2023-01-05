@@ -11,6 +11,10 @@
   text-transform: uppercase;
   color: var(--color-neutral-white);
 
+  &:hover {
+    color: var(--color-primary-green);
+  }
+
   &__title {
     font-family: 'Space Grotesk Bold';
     padding-bottom: 10px;
