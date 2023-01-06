@@ -32,8 +32,10 @@ $bp-mobile: 375px;
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   @extend %heading;
+  color: var(--color-neutral-white);
 }
 
 h1 {
@@ -47,7 +49,10 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.4rem;
 }
 
 p,
@@ -87,6 +92,9 @@ hr {
     font-size: 3rem;
   }
   h3 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 2rem;
   }
 }

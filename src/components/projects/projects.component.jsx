@@ -89,7 +89,7 @@ const Projects = () => {
   return (
     <div className="projects">
       <div className="projects__header--container">
-        <h2>Projects</h2>
+        <h1>Projects</h1>
         <Button type="button">Contact Me</Button>
       </div>
       <div className="projects__container">
@@ -117,7 +117,7 @@ const Projects = () => {
                   )}
                 </div>
                 <div className="projects__info--wrapper">
-                  <h3 className="projects__title">{projects.name}</h3>
+                  <h4 className="projects__title">{projects.name}</h4>
                   <div className="projects__tech">
                     <p>{projects.techOne}</p>
                     <p>{projects.techTwo}</p>
@@ -125,8 +125,7 @@ const Projects = () => {
                   </div>
                 </div>
                 {isDesktop ? (
-                  <div>
-                  </div>
+                  <div></div>
                 ) : (
                   <div className="projects__projects--links-mobile">
                     <Button type="button">View Project</Button>

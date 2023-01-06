@@ -39,8 +39,8 @@ const Profile = () => {
       <div className="profile__statement">
         <div className="profile__statement--title">
           <h1>
-            Nice to meet you! I'm
-            <span className="profile__statement--underline">Adam Keyes</span>.
+            Nice to meet you! I'm <span></span>
+            <span className="profile__statement--underline"> Adam Keyes</span>.
           </h1>
           <p className="profile__statement--copy">
             Based in the UK, I’m a front-end developer passionate about building

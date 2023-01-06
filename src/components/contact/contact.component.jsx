@@ -8,7 +8,7 @@ const Contact = () => {
     <div className="contact">
       <div className="contact__wrapper">
         <div className="contact__header">
-          <h2 className="contact__header--title">Contact</h2>
+          <h1 className="contact__header--title">Contact</h1>
           <p className="contact__header--statement">
             I would love to hear about your project and how I could help. Please
             fill in the form, and I’ll get back to you as soon as possible.
