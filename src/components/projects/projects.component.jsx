@@ -86,10 +86,6 @@ const Projects = () => {
     },
   ];
 
-  const renderDesktop = () => {};
-
-  const renderMobile = () => {};
-
   return (
     <div className="projects">
       <div className="projects__header--container">
