@@ -76,7 +76,7 @@ const Projects = () => {
       techThree: 'JavaScript',
     },
     {
-      id: 5,
+      id: 6,
       DesktopImage: `${ArtGalleryDesktop}`,
       MobileImage: `${ArtGalleryMobile}`,
       name: 'Art Gallery Showcase',

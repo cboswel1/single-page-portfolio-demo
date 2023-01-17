@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+import Header from '../header/header.component';
 import Button from '../button/button.component';
 
 import profileImageMobile from '../../assets/images/image-profile-mobile.webp';
@@ -10,29 +11,30 @@ import bgCircle from '../../assets/images/pattern-circle.svg';
 import './profile.styles.scss';
 
 const Profile = () => {
-    const [isDesktop, setDesktop] = useState(window.innerWidth > 600);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 600);
 
-    const updateMedia = () => {
-      setDesktop(window.innerWidth > 600);
-    };
+  const updateMedia = () => {
+    setDesktop(window.innerWidth > 600);
+  };
 
-    useEffect(() => {
-      window.addEventListener('resize', updateMedia);
-      return () => window.removeEventListener('resize', updateMedia);
-    });
+  useEffect(() => {
+    window.addEventListener('resize', updateMedia);
+    return () => window.removeEventListener('resize', updateMedia);
+  });
 
   return (
     <main className="profile">
+      <Header />
       <div className="profile__hero">
         <img className="profile__bg-rings" src={bgRings} />
         <img className="profile__bg-circle" src={bgCircle} />
-     
+
         <div className="profile__image--container">
-        {isDesktop ? (
-          <img  src={profileImageDesktop} />
-        ) : (
-          <img className="profile__mobile" src={profileImageMobile} />
-        )}
+          {isDesktop ? (
+            <img src={profileImageDesktop} />
+          ) : (
+            <img className="profile__mobile" src={profileImageMobile} />
+          )}
         </div>
       </div>
 
@@ -51,7 +53,6 @@ const Profile = () => {
           <Button type="button">Contact Me</Button>
         </div>
       </div>
-
     </main>
   );
 };

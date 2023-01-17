@@ -10,7 +10,7 @@ const Experience = () => {
     { id: 3, name: 'Javascript', time: '4 Years of Experience' },
     { id: 4, name: 'Accessibility', time: '4 Years of Experience' },
     { id: 5, name: 'React', time: '3 Years of Experience' },
-    { id: 5, name: 'Sass', time: '3 Years of Experience' },
+    { id: 6, name: 'Sass', time: '3 Years of Experience' },
   ];
 
   return (
