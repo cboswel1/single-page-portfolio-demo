@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+import Header from '../header/header.component';
 import Button from '../button/button.component';
 
 import profileImageMobile from '../../assets/images/image-profile-mobile.webp';
@@ -22,17 +23,18 @@ const Profile = () => {
     });
 
   return (
-    <main className="profile">
+    <><Header /><main className="profile">
+
       <div className="profile__hero">
         <img className="profile__bg-rings" src={bgRings} />
         <img className="profile__bg-circle" src={bgCircle} />
-     
+
         <div className="profile__image--container">
-        {isDesktop ? (
-          <img  src={profileImageDesktop} />
-        ) : (
-          <img className="profile__mobile" src={profileImageMobile} />
-        )}
+          {isDesktop ? (
+            <img src={profileImageDesktop} />
+          ) : (
+            <img className="profile__mobile" src={profileImageMobile} />
+          )}
         </div>
       </div>
 
@@ -52,7 +54,7 @@ const Profile = () => {
         </div>
       </div>
 
-    </main>
+    </main></>
   );
 };
 

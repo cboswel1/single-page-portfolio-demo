@@ -11,7 +11,6 @@ import Contact from '../../components/contact/contact.component';
 function Home() {
 	return (
 		<main className="wrapper">
-            {/* <Header /> */}
             <Profile />
             <Experience />
             <Projects />

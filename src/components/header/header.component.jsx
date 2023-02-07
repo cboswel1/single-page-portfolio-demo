@@ -4,7 +4,7 @@ import './header.styles.scss'
 const Header = () => {
 
     return (
-        <h1 className="name-title">Header</h1>
+        <h1 className="name-title">adamkeyes</h1>
     )
 }
 

@@ -1,11 +1,12 @@
 import React from 'react';
 import './contact.styles.scss';
 
+import Header from '../header/header.component';
 import Button from '../button/button.component';
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <><div className="contact">
       <div className="contact__wrapper">
         <div className="contact__header">
           <h1 className="contact__header--title">Contact</h1>
@@ -22,8 +23,7 @@ const Contact = () => {
                 name="name"
                 className="form-control"
                 id="name"
-                placeholder="Name"
-              />
+                placeholder="Name" />
             </div>
             <div class="contact__form--group">
               <input
@@ -31,8 +31,7 @@ const Contact = () => {
                 name="email"
                 className="form-control"
                 id="email"
-                placeholder="Email"
-              />
+                placeholder="Email" />
             </div>
             <div class="contact__form--group">
               <textarea
@@ -48,7 +47,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </div>
+    </div><Header  /></>
   );
 };
 
